@@ -1,1 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Library</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>My Library</h1>
+    <button id="newBookBtn">New Book</button>
 
+    <!-- Modal for book form -->
+    <div id="modalOverlay">
+      <form id="bookFormModal">
+        <input type="text" name="title" placeholder="Title" required />
+        <input type="text" name="author" placeholder="Author" required />
+        <input type="number" name="pages" placeholder="Pages" required />
+        <button type="submit">Add Book</button>
+      </form>
+    </div>
+
+    <div id="library"></div>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
